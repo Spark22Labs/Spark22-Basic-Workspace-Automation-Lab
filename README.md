@@ -177,7 +177,7 @@ node APILABSPARK22.js
 
 ```
 async function getVaultAccounts(){
-  getVaultAccounts = await fireblocks.getVaultAccountsWithPageInfo({namePrefix: yourname, assetId: "ETH_TEST"});
+  getVaultAccounts = await fireblocks.getVaultAccountsWithPageInfo({namePrefix: "Spark22-[yourname]", assetId: "ETH_TEST"});
   console.log(getVaultAccounts);
 }
 ```

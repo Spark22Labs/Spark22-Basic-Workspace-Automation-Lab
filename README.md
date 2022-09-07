@@ -125,12 +125,12 @@ node APILABSPARK22.js
 **Ask your Fireblocks Lab Partner to send 0.1 ETH_TEST to your new vault account, providing the ID for that vault.**
 
 ### Step 3: Vault to Vault Transaction
-  1. Repeat step #2.#5 to create one additional vault account: createVaultAccount(Spark22-[yourname]-2);
+  1. Repeat step #2.5 to create one additional vault account: createVaultAccount(Spark22-[yourname]-2);
   2. Document the Id of the new vault account.
   3. Add the following code block to your **APILABSPARK22.js** file, that will transfer 0.001 ETH_TEST between the two vault accounts.
 ```
 
-sync function createTransaction(){
+async function createTransaction(){
     const payload = {
       assetId: "ETH_TEST",
         source: {
